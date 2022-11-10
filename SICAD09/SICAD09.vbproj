@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{15A4650F-2BA3-40E2-B255-6EF609DFB3AA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SICAD09.My.MyApplication</StartupObject>
+    <RootNamespace>SICAD09</RootNamespace>
+    <AssemblyName>SICAD09</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\publicacion de proyectos\SICAD09\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>\\11.11.28.205\apps\SICAD09\</InstallUrl>
+    <UpdateUrl>\\11.11.28.205\apps\SICAD09\</UpdateUrl>
+    <ProductName>SICAD 09</ProductName>
+    <SuiteName>APPCOB</SuiteName>
+    <MinimumRequiredVersion>2.0.1.0</MinimumRequiredVersion>
+    <ApplicationRevision>18</ApplicationRevision>
+    <ApplicationVersion>2.0.2.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SICAD09.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SICAD09.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>A5DEB4FDA88C5E1BC571FEAF5670576AD7A43D86</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>SICAD09_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>no localizados.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="eCryptography, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Eramake.eCryptography.1.1.6\lib\net45\eCryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.3.6.0\lib\net45\ExcelDataReader.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Npgsql, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Npgsql.4.0.0\lib\net45\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.0\lib\netstandard1.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.0\lib\portable-net45+win8+wp8+wpa81\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.Designer.vb">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutBox1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Cnx.vb" />
+    <Compile Include="Datos_pop.vb" />
+    <Compile Include="Frm_01_nuevo_nl.Designer.vb">
+      <DependentUpon>Frm_01_nuevo_nl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_01_nuevo_nl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_02_asignacion.Designer.vb">
+      <DependentUpon>Frm_02_asignacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_02_asignacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_02_documentos.Designer.vb">
+      <DependentUpon>Frm_02_documentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_02_documentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_03_formato_resultado_nl.Designer.vb">
+      <DependentUpon>Frm_03_formato_resultado_nl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_03_formato_resultado_nl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_03_inicio.Designer.vb">
+      <DependentUpon>Frm_03_inicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_03_inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_04_investigaciones_internas.Designer.vb">
+      <DependentUpon>Frm_04_investigaciones_internas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_04_investigaciones_internas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_101_sectores.Designer.vb">
+      <DependentUpon>Frm_101_sectores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_101_sectores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_102_rangos.Designer.vb">
+      <DependentUpon>Frm_102_rangos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_102_rangos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_100_usuarios.Designer.vb">
+      <DependentUpon>Frm_100_usuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_100_usuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mdo_rangos.vb" />
+    <Compile Include="SICAD09.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SICAD09.Designer.vb">
+      <DependentUpon>SICAD09.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SplashScreen1.Designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Val_cnx.Designer.vb">
+      <DependentUpon>Val_cnx.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Val_cnx.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_01_nuevo_nl.resx">
+      <DependentUpon>Frm_01_nuevo_nl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_02_asignacion.resx">
+      <DependentUpon>Frm_02_asignacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_02_documentos.resx">
+      <DependentUpon>Frm_02_documentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_03_formato_resultado_nl.resx">
+      <DependentUpon>Frm_03_formato_resultado_nl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_03_inicio.resx">
+      <DependentUpon>Frm_03_inicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_04_investigaciones_internas.resx">
+      <DependentUpon>Frm_04_investigaciones_internas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_102_rangos.resx">
+      <DependentUpon>Frm_102_rangos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_100_usuarios.resx">
+      <DependentUpon>Frm_100_usuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SICAD09.resx">
+      <DependentUpon>SICAD09.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Val_cnx.resx">
+      <DependentUpon>Val_cnx.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Resources\CONSTANCIA_BUSQUEDA_FUENTES_INTERNAS.xltx" />
+    <None Include="Resources\CONTROL-NOTIF-LOCAL.xltx" />
+    <None Include="Resources\CONTROL_LOCAL.xltx" />
+    <None Include="Resources\RESULTADO_NL.xltx" />
+    <None Include="SICAD09_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\geo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no localizados.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="no localizados.ico" />
+    <None Include="Resources\unavailable_48px.png" />
+    <None Include="Resources\unavailable_32px.png" />
+    <None Include="Resources\settings_48px.png" />
+    <None Include="Resources\save_48px.png" />
+    <None Include="Resources\save_32px.png" />
+    <None Include="Resources\edit_48px.png" />
+    <None Include="Resources\edit_32px.png" />
+    <None Include="Resources\cancel_32px.png" />
+    <None Include="Resources\abajo.png" />
+    <None Include="Resources\izquierdo.png" />
+    <None Include="Resources\direccion.png" />
+    <None Include="Resources\derecho.png" />
+    <None Include="Resources\file_48px.png" />
+    <None Include="Resources\file_32px.png" />
+    <None Include="Resources\file_24px.png" />
+    <None Include="Resources\add_graph_report_24px.png" />
+    <None Include="Resources\add_12px.png" />
+    <None Include="Resources\add_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
